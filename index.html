@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hijabies Forever</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #fff;
+      border-bottom: 2px solid #e0c5d8;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+    .logo-area img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+      border: 2px solid #b3478f;
+    }
+    .logo-area h1 {
+      font-size: 1.6rem;
+      color: #b3478f;
+      font-weight: 700;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6b2a6f;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #b3478f;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 1000px;
+      width: 100%;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: #8a2c78;
+      border-left: 6px solid #b3478f;
+      padding-left: 12px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero {
+      background: linear-gradient(to right, #fce6f3, #fffafc);
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .hero h2 {
+      font-size: 2.4rem;
+      color: #b3478f;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .hero a {
+      background: #b3478f;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .hero a:hover {
+      background: #8a2c78;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(179, 71, 143, 0.15);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+      transition: box-shadow 0.3s;
+    }
+    .product:hover {
+      box-shadow: 0 8px 20px rgba(179, 71, 143, 0.3);
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .product h3 {
+      margin: 12px 0;
+      font-size: 1.2rem;
+      color: #6b2a6f;
+    }
+    .product p.price {
+      color: #b3478f;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .product p.description {
+      font-size: 0.95rem;
+      color: #555;
+      padding: 0 10px;
+      margin-bottom: 15px;
+    }
+    .order-btn {
+      background: #b3478f;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .order-btn:hover {
+      background: #8a2c78;
+    }
+    footer {
+      background: #fff;
+      border-top: 2px solid #e0c5d8;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      .logo-area h1 { font-size: 1.4rem; }
+      nav a { margin-left: 12px; font-size: 0.9rem; }
+      .hero h2 { font-size: 1.8rem; }
+      .product img { height: 150px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="images/your_logo.png" alt="Logo" />
+        <h1>Hijabies Forever</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Modesty with Elegance</h2>
+      <p>Explore our premium ombre & satin hijabs, plus stylish accessories. Comfortable, trendy, and affordable.</p>
+      <a href="products.html">Shop Now</a>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Hijabies Forever is a home-based brand delivering high-quality hijabs and accessories. We celebrate modest fashion with passion, offering unique styles and personalized care.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>📞 WhatsApp: <a href="https://wa.me/yourwhatsappnumber" style="color:#b3478f;">Chat with us</a></p>
+      <p>📧 Email: hijabiesforever@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Hijabies Forever. All rights reserved.
+  </footer>
+</body>
+</html>

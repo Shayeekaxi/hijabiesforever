@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hijabies Forever - Products</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    header {
+      display: flex; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #e0c5d8;
+    }
+    header img { width: 45px; height: 45px; border-radius: 50%; margin-right: 10px; border:2px solid #b3478f; }
+    header h1 { font-size: 1.6rem; color: #b3478f; }
+    nav { margin-left: auto; }
+    nav a { text-decoration: none; color: #6b2a6f; margin-left: 20px; font-weight:600; }
+    nav a:hover { color: #b3478f; }
+    section { margin-top: 40px; }
+    .category h2 { font-size: 1.5rem; color: #8a2c78; border-left: 6px solid #b3478f; padding-left: 12px; text-transform: uppercase; margin-bottom: 20px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap:20px; }
+    .product { background:white; border-radius:10px; box-shadow:0 4px 10px rgba(179,71,143,0.15); overflow:hidden; text-align:center; transition:box-shadow 0.3s; }
+    .product:hover { box-shadow:0 8px 20px rgba(179,71,143,0.3); }
+    .product img { width:100%; height:180px; object-fit:cover; }
+    .product h3 { margin:12px 0; color:#6b2a6f; font-size:1.2rem; }
+    .product p.price { color:#b3478f; font-weight:700; }
+    .order-btn { background:#b3478f; color:white; padding:10px 20px; border:none; border-radius:25px; text-decoration:none; display:inline-block; margin-bottom:10px; transition:background 0.3s; }
+    .order-btn:hover { background:#8a2c78; }
+    @media(max-width:600px){ .product img {height:150px;} header h1 {font-size:1.4rem;} }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/your_logo.png" alt="Logo"><h1>Hijabies Forever</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="category" id="ombre-hijabs">
+    <h2>Ombre Hijabs</h2>
+    <div class="products-grid">
+      <div class="product">
+        <img src="images/premium_chiffon.jpg" alt="Premium chiffon">
+        <h3>Premium Chiffon</h3><p class="price">200 Rs.</p>
+        <a href="https://wa.me/yourwhatsappnumber" class="order-btn">Order via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="category" id="satin-hijabs">
+    <h2>Satin Hijabs</h2>
+    <div class="products-grid">
+      <div class="product">
+        <img src="images/luxe_muna_satin.jpg" alt="Luxe muna satin">
+        <h3>Luxe Muna Satin</h3><p class="price">250 Rs.</p>
+        <a href="https://wa.me/yourwhatsappnumber" class="order-btn">Order via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="category" id="accessories">
+    <h2>Accessories</h2>
+    <div class="products-grid">
+      <p>Coming soon...</p>
+    </div>
+  </section>
+
+  <footer style="margin-top:40px;font-size:0.9rem;color:#666;text-align:center;">
+    &copy; 2025 Hijabies Forever
+  </footer>
+</body>
+</html>
